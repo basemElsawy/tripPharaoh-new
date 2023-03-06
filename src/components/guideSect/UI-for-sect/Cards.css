@@ -1,0 +1,46 @@
+.cards-container {
+  display: flex;
+  margin: auto;
+  width: 75%;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10%;
+  padding: 20px;
+  margin-bottom: 90px;
+}
+
+.description-span {
+  /* background-color: black; */
+  width: 300px;
+  font-weight: bold;
+  color: #212b4e;
+  font-size: 1rem;
+}
+.cards-container__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.cards-header {
+  font-size: 1.825rem;
+}
+
+.images-cards {
+  position: relative;
+  background-image: var(--bg-color);
+}
+.image-link {
+  position: relative;
+  transition: 0.3s all ease-in-out;
+}
+.image-link::before {
+  content: attr(data-HdLine);
+  position: absolute;
+  top: -100px;
+  left: 35%;
+  font-weight: bolder;
+}

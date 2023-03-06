@@ -1,0 +1,38 @@
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.navbar {
+  color: var(--txt-color);
+  background-color: transparent;
+  width: 100%;
+  font-size: 1.425rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  font-weight: bold;
+  background-color: #212b4ec6;
+  height: fit-content;
+  padding-block: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: black; */
+}
+.navbar ul:nth-child(2) {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+.list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  align-items: center;
+  padding: 10px;
+}
