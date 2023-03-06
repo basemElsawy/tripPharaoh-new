@@ -1,32 +1,48 @@
-.cards-container {
+.cards {
   display: flex;
   margin: auto;
   width: 75%;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 10%;
   padding: 20px;
   margin-bottom: 90px;
+  flex-direction: column;
+  text-align: center;
+  gap: 35px;
+}
+.header h1 {
+  font-size: 40px;
+  color: #212b4e;
 }
 
 .description-span {
   /* background-color: black; */
   width: 300px;
   font-weight: bold;
-  color: #212b4e;
+  color: #0e599ae0;
   font-size: 1rem;
+  padding: 10px;
 }
 .cards-container__card {
   display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 10px;
+  box-shadow: 0px 0px 10px 0px #212b4e34;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.cards-container__card:hover {
+  transform: scale(1.1);
 }
 
 .cards-header {
   font-size: 1.825rem;
+  color: #212b4e;
 }
 
 .images-cards {
@@ -40,7 +56,27 @@
 .image-link::before {
   content: attr(data-HdLine);
   position: absolute;
+  z-index: 1;
   top: -100px;
-  left: 35%;
+  left: 27%;
+  font-size: 1.225rem;
   font-weight: bolder;
+  opacity: 0;
+  transition: 0.3s ease-in-out all;
+}
+.image-link:hover::before {
+  opacity: 1;
+}
+
+.overlay {
+  width: 300px;
+  height: 200px;
+  background-color: #212b4eb5;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  gap: 100px;
 }

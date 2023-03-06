@@ -1,27 +1,27 @@
-.header-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+.Header-fixed {
+  width: 100%;
+}
+.bg-content {
+  position: relative;
 }
 .navbar {
   color: var(--txt-color);
-  background-color: transparent;
+
   width: 100%;
   font-size: 1.425rem;
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 0;
+
   z-index: 1000;
   font-weight: bold;
-  background-color: #212b4ec6;
+  background-color: #212b4eaf;
   height: fit-content;
-  padding-block: 10px;
+  /* padding-block: 10px; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
+  gap: 50px;
   /* background-color: black; */
 }
 .navbar ul:nth-child(2) {
@@ -32,7 +32,7 @@
 .list {
   display: flex;
   justify-content: space-evenly;
-  width: 30%;
+  width: 20%;
   align-items: center;
   padding: 10px;
 }

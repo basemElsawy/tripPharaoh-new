@@ -1,15 +1,17 @@
 import React from 'react'
-import NavBar from '../src/components/Navbar/NavBar'
+
 import Home from './components/HomeSect/Home'
 import './index.css'
 import GuideSect from './components/guideSect/GuideSect'
+import Packages from './components/PackagesSect/Packages'
 const App = () => {
   return (
     <>
-      <NavBar />
+
       <main className='main-content__container'>
         <Home />
         <GuideSect />
+        <Packages />
       </main>
     </>
   )

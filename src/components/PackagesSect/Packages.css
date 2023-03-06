@@ -1,0 +1,42 @@
+.background-content {
+  background-image: url(./images/pyramids.jpg);
+  height: 70vh;
+  width: 100%;
+  background-position: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #212b4e;
+  background-blend-mode: overlay;
+}
+.description-packages {
+  height: 300px;
+  width: 60%;
+  margin: auto;
+  background-color: #212b4e;
+  transform: translateY(-100px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: stretch;
+  color: white;
+}
+.description-packages h1 {
+  color: var(--text-color);
+  padding: 10px;
+}
+.description-packages p {
+  color: white;
+  font-size: 1.425rem;
+  padding: 10px;
+}
+.package-start {
+  color: white;
+  font-size: 1.225rem;
+  padding: 20px;
+}
+
+.package-start:hover {
+  background-color: #5d5e5e15;
+}

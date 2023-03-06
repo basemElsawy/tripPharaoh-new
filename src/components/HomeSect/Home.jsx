@@ -1,9 +1,11 @@
 import React from 'react'
 import './Home.css'
 import SearchBar from './SearchBar/SearchBar'
+import NavBar from './Navbar/NavBar'
 const Home = () => {
     return (
         <div className='bg-content'>
+            <NavBar />
             <div className='main-content'>
                 <div>
                     <h1 className='headers'>

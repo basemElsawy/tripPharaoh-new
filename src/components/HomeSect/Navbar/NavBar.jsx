@@ -6,21 +6,21 @@ const NavBar = () => {
     <header className='Header-fixed'>
       <nav className='navbar'>
         <ul className='list'>
-          <li ><img src={Logo} width="150" height="75" alt="" /></li>
+          <li ><img src={Logo} width="200" height="100" alt="" /></li>
         </ul>
         <ul>
           <li><a href="#Home">
-            Home
+            Home <i className="icon-home"></i>
           </a></li>
           <li><a href="#">
-            About
+            About <i className="icon-book-open"></i>
           </a></li>
           <li><a href="#">
-            On demand
+            On demand <i className="icon-cursor"></i>
           </a></li>
 
           <li><a href="#">
-            Reviews
+            Reviews <i className="icon-notebook"></i>
           </a></li>
 
         </ul>

@@ -18,7 +18,7 @@ const Data = [
     },
     {
         id: 2,
-        title: 'Long journey',
+        title: 'Long journey\'s',
         placeShown: 'Wadi El Rayan',
         placeShownHover: 'Siwa Oasis',
         images: image2,
@@ -28,7 +28,7 @@ const Data = [
     {
         id: 3,
         title: 'Fun Rides',
-        placeShown: 'Camel Rides ',
+        placeShown: 'Camel Rides',
         placeShownHover: 'Atv Buggies',
         images: image3,
         hoverImg: imageHover3,
