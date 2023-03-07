@@ -4,9 +4,10 @@ import Data from './Data'
 const Giza = () => {
     return (
         <div className='main-content-giza' id='Giza'>
-            <div>
-                <h1>Giza Trips</h1>
+            <div className='headers-giza'>
+                <h1>Giza Trips <i class="fa-sharp fa-solid fa-chart-pyramid"></i></h1>
                 <span>Most Desired Landmarks In Giza</span>
+
             </div>
             <div className='trip-cards-container grid-container' >
                 {
@@ -19,12 +20,14 @@ const Giza = () => {
                                     <div className='position-abs'>
                                         <i className="icon-location-pin"></i>
                                         <h3>{val.tripTo}</h3>
+                                        <a href="#" className='visit-btn'>Visit</a>
                                     </div>
                                 </div>
                             </div>
                         )
                     })
                 }
+                <div className='link-to-giza'><a href="#" className='more-giza'>More Trips</a></div>
             </div>
         </div>
     )
