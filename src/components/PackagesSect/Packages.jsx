@@ -12,11 +12,11 @@ import 'swiper/css/scrollbar';
 
 const Packages = () => {
     return (
-        <div>
+        <div id='Packages'>
 
             <div className='background-content'>
                 <div className='description-packages'>
-                    <h1>Carefully Chosen Traveling Packages</h1>
+                    <h1>Traveling Packages</h1>
                     <p>Because we know your taste and we know your style in traveling we chose these trips based on your traveling taste </p>
                     <a href="" className='package-start'>Start your trip</a>
                 </div>

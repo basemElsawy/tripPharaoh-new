@@ -9,7 +9,7 @@
   background-blend-mode: overlay;
 }
 .description-packages {
-  height: 300px;
+  height: 400px;
   width: 60%;
   margin: auto;
   background-color: #212b4e;
@@ -24,19 +24,34 @@
 }
 .description-packages h1 {
   color: var(--text-color);
-  padding: 10px;
+  padding: 20px;
 }
 .description-packages p {
   color: white;
   font-size: 1.425rem;
-  padding: 10px;
+  padding: 20px;
 }
 .package-start {
   color: white;
   font-size: 1.225rem;
   padding: 20px;
+  position: relative;
 }
 
 .package-start:hover {
   background-color: #5d5e5e15;
+}
+
+.package-start::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  background-color: var(--text-color);
+  left: 0;
+  bottom: 0;
+  transition: 0.3s all ease-in-out;
+}
+.package-start:hover::before {
+  width: 100%;
 }

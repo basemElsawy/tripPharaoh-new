@@ -4,6 +4,7 @@ import Home from './components/HomeSect/Home'
 import './index.css'
 import GuideSect from './components/guideSect/GuideSect'
 import Packages from './components/PackagesSect/Packages'
+import Local from './components/GizaAndCairo/Local'
 const App = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const App = () => {
         <Home />
         <GuideSect />
         <Packages />
+        <Local />
       </main>
     </>
   )

@@ -35,6 +35,10 @@
   box-shadow: 0px 0px 10px 0px #212b4e34;
   transition: 0.3s ease-in-out;
   border-radius: 10px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.6s all ease-in-out;
+  filter: blur(5px);
 }
 .cards-container__card:hover {
   transform: scale(1.1);
@@ -79,4 +83,20 @@
 .card {
   display: flex;
   gap: 100px;
+}
+
+.active {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 0.3s all ease-in-out;
+  filter: blur(0px);
+}
+.cards-container__card:nth-child(1) {
+  transition-delay: 100ms;
+}
+.cards-container__card:nth-child(2) {
+  transition-delay: 200ms;
+}
+.cards-container__card:nth-child(3) {
+  transition-delay: 300ms;
 }

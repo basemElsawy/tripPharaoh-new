@@ -1,0 +1,35 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.trip-cards-container {
+  width: 80%;
+  margin: auto;
+}
+.image-container {
+  position: relative;
+}
+
+.position-abs {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+}
+
+.image-container {
+  position: relative;
+  color: white;
+  font-size: 1.225rem;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #212b4ea1;
+}
