@@ -1,0 +1,47 @@
+.data-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  column-gap: 40px;
+  height: 100%;
+}
+
+.late-night-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 85%;
+  justify-content: center;
+  align-items: center;
+  margin: 192px auto;
+}
+
+.bg-content-date {
+  background-image: url(image/nightdates.jpg);
+  height: 100%;
+  background-size: cover;
+  justify-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  width: 70%;
+  background-color: #212b4e;
+  background-blend-mode: overlay;
+  position: relative;
+  border-radius: 10px;
+  height: 70vh;
+}
+.bg-content-date::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  background-color: #212b4ece;
+  right: -50px;
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.describe {
+  font-size: 1.125rem;
+}

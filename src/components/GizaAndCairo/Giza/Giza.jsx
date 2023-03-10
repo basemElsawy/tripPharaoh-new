@@ -16,9 +16,9 @@ const Giza = () => {
                             <div key={id}  >
                                 <div className='image-container'>
 
-                                    <img src={val.image} width='100%' height='300' alt="" />
+                                    <img src={val.image} width='100%' height='350' alt="" />
                                     <div className='position-abs'>
-                                        <i className="icon-location-pin"></i>
+                                        <i className="icon-location-pin icon"></i>
                                         <h3>{val.tripTo}</h3>
                                         <a href="#" className='visit-btn'>Visit</a>
                                     </div>

@@ -1,0 +1,81 @@
+.journey-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+  width: 85%;
+  margin: 192px auto;
+}
+.bg-content-journey {
+  background-image: url(images/journey.jpg);
+  background-size: cover;
+  background-position: 100% 50%;
+  color: var(--text-color);
+  height: 70vh;
+  width: 70%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #212b4eba;
+
+  background-blend-mode: overlay;
+  position: relative;
+}
+.bg-content-journey h1 {
+  font-size: 3.125rem;
+}
+
+.bg-content-journey::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  background-color: #212b4ece;
+  left: -50px;
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.data-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* transform: translateY(-30px); */
+  width: 100%;
+  gap: 20px;
+  justify-content: flex-start;
+  height: 100%;
+  column-gap: 40px;
+}
+
+.more-link {
+  position: absolute;
+  bottom: 0;
+  /* left: 35%; */
+  text-align: center;
+  width: 100%;
+  /* background-color: white; */
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1.425rem;
+}
+
+.more-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  transition: 0.3s all ease-in-out;
+  background-color: var(--text-color);
+  border-radius: 10px;
+}
+.more-link:hover::before {
+  width: 100%;
+}
+
+.more-link:hover {
+  background-color: rgba(255, 255, 255, 0.058);
+}

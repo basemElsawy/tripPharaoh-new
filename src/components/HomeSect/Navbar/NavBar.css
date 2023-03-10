@@ -15,7 +15,8 @@
   z-index: 1000;
   font-weight: bold;
   background-color: #212b4eaf;
-  height: fit-content;
+  height: 100px;
+
   /* padding-block: 10px; */
   display: flex;
   flex-direction: row;
@@ -32,7 +33,31 @@
 .list {
   display: flex;
   justify-content: space-evenly;
-  width: 20%;
+  width: 100%;
   align-items: center;
   padding: 10px;
+}
+
+.list-item-logo {
+  position: relative;
+}
+.list-item-logo::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+
+  width: 80px;
+  background: white;
+  right: -90px;
+  top: 48%;
+  border-radius: 10px;
+}
+.list-item-logo::after {
+  content: "";
+  position: absolute;
+  left: -90px;
+  top: 48%;
+  background-color: white;
+  width: 80px;
+  height: 3px;
 }

@@ -8,11 +8,12 @@
 body {
   font-family: "Poppins", sans-serif;
   height: auto;
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 70px;
+  scroll-padding-top: 80px;
 }
 
 :root {
@@ -91,4 +92,11 @@ a:hover {
 
 h3 {
   font-weight: 400;
+}
+
+.icon {
+  font-size: 1.625rem !important;
+}
+.icon-location-pin {
+  font-size: 1.625rem;
 }

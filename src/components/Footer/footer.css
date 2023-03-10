@@ -1,0 +1,8 @@
+.bg-footer-content {
+  height: 70vh;
+  background-image: url(image/pexels-taryn-elliott-3889892.jpg);
+  background-size: cover;
+  background-position: 100% 190%;
+  background-color: #212b4e;
+  background-blend-mode: overlay;
+}
