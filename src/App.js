@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './App.css'
 import Home from './components/HomeSect/Home'
 import './index.css'
 import GuideSect from './components/guideSect/GuideSect'
@@ -14,7 +14,7 @@ const App = () => {
   return (
     <>
       <main className='main-content__container'>
-        <Side />
+        <Side className='sidebar-outside' />
         <Home />
         <GuideSect />
         <Packages />

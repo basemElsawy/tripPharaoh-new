@@ -2,16 +2,200 @@
   position: fixed;
   z-index: 10000;
   left: 0;
-  top: 50%;
-  padding: 20px;
-  width: 10%;
-  height: 300px;
+  top: 0%;
+  padding: 10px;
+  width: 140px;
+  max-width: 150px;
+  height: 100%;
   background-color: #212b4e;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+  box-shadow: 0px 0px 50px 4px #212b4ec5;
+  color: white;
 }
 
 .sidebar-list {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.825rem;
+  height: 100%;
+  gap: 50px;
+  transform: translateY(-65px);
+}
+
+.navbar-header {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px 0px;
+  width: 100%;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.457);
+}
+.navbar-header span {
+  font-size: 2.125rem;
+  color: var(--text-color);
+}
+
+.sidebar-footer {
+  transform: translateY(-65px) rotate(270deg);
+}
+
+.Home {
+  transition: 0.3s all ease-in-out;
+  position: relative;
+}
+.Home::before {
+  content: "Home Section";
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  left: -50px;
+  bottom: -15px;
+  font-size: 1.225rem;
+  filter: blur(5px);
+  padding: 10px;
+  opacity: 0;
+  z-index: -100;
+}
+.Home:hover::before {
+  content: "Home Section";
+  padding: 10px;
+  background-color: #212b4e;
+  position: absolute;
+  font-size: 1.225rem;
+  border-radius: 10px;
+  filter: blur(0px);
+  left: 80px;
+  z-index: -1;
+  opacity: 1;
+  z-index: -100;
+}
+.Packages {
+  transition: 0.3s all ease-in-out;
+  position: relative;
+}
+.Packages::before {
+  content: "Packages Section";
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  left: -50px;
+  bottom: -15px;
+  font-size: 1.225rem;
+  filter: blur(5px);
+  padding: 10px;
+  opacity: 0;
+  z-index: -100;
+}
+.Packages:hover::before {
+  content: "Packages section";
+  padding: 10px;
+  background-color: #212b4e;
+  position: absolute;
+  font-size: 1.225rem;
+  border-radius: 10px;
+  filter: blur(0px);
+  left: 80px;
+  z-index: -1;
+  opacity: 1;
+  z-index: -100;
+}
+.Giza {
+  transition: 0.3s all ease-in-out;
+  position: relative;
+}
+.Giza::before {
+  content: "Giza and cairo trips";
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  left: -50px;
+  bottom: -15px;
+  font-size: 1.225rem;
+  filter: blur(5px);
+  padding: 10px;
+  opacity: 0;
+  width: 150px;
+  z-index: -100;
+}
+.Giza:hover::before {
+  content: "Giza and cairo trips";
+  padding: 10px;
+  background-color: #212b4e;
+  position: absolute;
+  font-size: 1.225rem;
+  border-radius: 10px;
+  filter: blur(0px);
+  left: 80px;
+  z-index: -1;
+  opacity: 1;
+  width: 150px;
+  z-index: -100;
+}
+.Fun {
+  transition: 0.3s all ease-in-out;
+  position: relative;
+}
+.Fun::before {
+  content: "Fun Rides";
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  left: -50px;
+  bottom: -15px;
+  font-size: 1.225rem;
+  filter: blur(5px);
+  padding: 10px;
+  opacity: 0;
+  z-index: -100;
+}
+.Fun:hover::before {
+  content: "Fun Rides";
+  padding: 10px;
+  background-color: #212b4e;
+  position: absolute;
+  font-size: 1.225rem;
+  border-radius: 10px;
+  filter: blur(0px);
+  left: 80px;
+  z-index: -1;
+  opacity: 1;
+  z-index: -100;
+}
+.Late {
+  transition: 0.3s all ease-in-out;
+  position: relative;
+}
+.Late::before {
+  content: "Home Section";
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  left: -50px;
+  bottom: -15px;
+  font-size: 1.225rem;
+  filter: blur(5px);
+  padding: 10px;
+  opacity: 0;
+  width: 100px;
+  z-index: -100;
+}
+.Late:hover::before {
+  content: "Late Night Dates";
+  padding: 10px;
+  background-color: #212b4e;
+  position: absolute;
+  font-size: 1.225rem;
+  border-radius: 10px;
+  filter: blur(0px);
+  left: 80px;
+  z-index: -1;
+  opacity: 1;
+  width: 100px;
+  z-index: -100;
+}
+.sidebar-list li a {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
 }
