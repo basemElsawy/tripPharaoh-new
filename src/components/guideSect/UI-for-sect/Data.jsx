@@ -5,6 +5,7 @@ import image2 from './images/fayom.jpg'
 import imageHover2 from './images/siwa.jpg'
 import image3 from './images/camels.png'
 import imageHover3 from './images/buggy.png'
+import image4 from './images/nightdates.jpg'
 const Data = [
     {
         id: 1,
@@ -33,6 +34,16 @@ const Data = [
         images: image3,
         hoverImg: imageHover3,
         description: 'Fun Rides to add the extra excitment in your visit to egypt',
+    }
+    ,
+    {
+        id: 4,
+        title: 'Late Night Dates',
+        placeShown: 'Restaurant\'s',
+        placeShownHover: 'Atv Buggies',
+        images: image4,
+        hoverImg: imageHover3,
+        description: 'Just the right place for your romantic date in egypt',
     }
 
 ]

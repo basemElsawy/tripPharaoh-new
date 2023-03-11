@@ -9,11 +9,12 @@ import FunRides from './components/Fun rides/FunRides'
 import LongJourney from './components/LongJourneys/LongJourney'
 import LateNight from './components/LateNight/LateNight'
 import Footer from './components/Footer/footer'
+import Side from './components/SideBar/Side'
 const App = () => {
   return (
     <>
-
       <main className='main-content__container'>
+        <Side />
         <Home />
         <GuideSect />
         <Packages />

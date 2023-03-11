@@ -4,7 +4,7 @@ import Data from '../LateNight/DataComp/Data'
 import DatesComp from './DataComp/DatesComp'
 const LateNight = () => {
     return (
-        <div className='late-night-wrapper'>
+        <div className='late-night-wrapper' id='Late'>
 
             <div className='data-wrapper'>
                 {

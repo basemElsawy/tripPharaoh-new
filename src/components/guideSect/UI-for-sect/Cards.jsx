@@ -33,7 +33,7 @@ const Cards = () => {
                         <div key={id} className={scrolled ? 'cards-container__card active' : 'cards-container__card'}>
                             <div className='img-container' >
 
-                                <a href={id === 3 ? '#Fun' : '' || id === 2 ? '#Long' : '' || id === 1 ? '#Packages' : ''} ref={myRef} className='image-link' data-headChange={placeShownHover} data-HdLine={placeShown}>
+                                <a href={id === 3 ? '#Fun' : '' || id === 2 ? '#Long' : '' || id === 1 ? '#Packages' : '' || id === 4 ? '#Late' : ''} ref={myRef} className='image-link' data-headChange={placeShownHover} data-HdLine={placeShown}>
                                     <div className='overlay'></div>
                                     <img src={images} className='image-cards' style={{
                                         borderRadius: '5px'
