@@ -1,0 +1,22 @@
+.main-section {
+  background-image: url(./Image/reviewsImage.jpg);
+  background-color: #212b4ec1;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50vh;
+}
+
+.form-container {
+  width: 75%;
+  margin: auto;
+  transform: translateY(-170px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-container h1 {
+  font-weight: 500;
+  font-size: 3.825rem;
+}

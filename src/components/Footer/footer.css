@@ -1,5 +1,5 @@
 .bg-footer-content {
-  height: 70vh;
+  height: fit-content;
   background-image: url(image/pexels-taryn-elliott-3889892.jpg);
   background-size: cover;
   background-position: 100% 210%;

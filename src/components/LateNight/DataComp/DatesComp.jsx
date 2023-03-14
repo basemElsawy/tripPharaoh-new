@@ -7,7 +7,7 @@ const DatesComp = (props) => {
                 <div className='overlay journey'></div>
                 <img src={props.image} style={{ borderRadius: '10px' }} width='100%' height='100%' alt='journeys' />
                 <div className='title-container'>
-                    <i className="icon-compass icon"></i>
+                    <i className="icon-location-pin icon"></i>
                     <h3 className='journey-name'>{props.title}</h3>
                     <span className='describe'>{props.description}</span>
                 </div>

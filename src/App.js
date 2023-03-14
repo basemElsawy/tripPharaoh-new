@@ -1,31 +1,23 @@
 import React from 'react'
-import './App.css'
-import Home from './components/HomeSect/Home'
-import './index.css'
-import GuideSect from './components/guideSect/GuideSect'
-import Packages from './components/PackagesSect/Packages'
-import Local from './components/GizaAndCairo/Local'
-import FunRides from './components/Fun rides/FunRides'
-import LongJourney from './components/LongJourneys/LongJourney'
-import LateNight from './components/LateNight/LateNight'
-import Footer from './components/Footer/footer'
-import Side from './components/SideBar/Side'
+import { Router } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
+import LandingPage from './LandingPage'
+import Reviews from './components/ReviewsComponents/Reviews'
+import NavBar from './components/Navbar/NavBar'
 const App = () => {
-  return (
-    <>
-      <main className='main-content__container'>
-        <Side className='sidebar-outside' />
-        <Home />
-        <GuideSect />
-        <Packages />
-        <Local />
-        <FunRides />
-        <LongJourney />
-        <LateNight />
-        <Footer />
-      </main>
-    </>
-  )
+    return (
+        <>
+
+
+
+            <NavBar />
+            <Routes>
+                <Route path='/' element={<LandingPage />} />
+                <Route path='/reviews' element={<Reviews />} />
+            </Routes>
+        </>
+
+    )
 }
 
 export default App

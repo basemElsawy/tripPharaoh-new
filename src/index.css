@@ -53,7 +53,6 @@ li {
 a {
   color: white;
   text-decoration: none;
-  transition: 0.3s all;
 }
 a:hover {
   color: var(--text-color);
@@ -99,4 +98,8 @@ h3 {
 }
 .icon-location-pin {
   font-size: 1.625rem;
+}
+
+.yellow {
+  color: var(--text-color);
 }
