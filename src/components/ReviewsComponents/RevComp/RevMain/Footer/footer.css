@@ -1,0 +1,74 @@
+.bg-footer-content {
+  height: fit-content;
+  background-image: url(../Image/reviewsImage.jpg);
+  background-size: cover;
+  background-position: 100% 210%;
+  background-color: #212b4e;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 50px;
+  color: white;
+  position: relative;
+}
+.services-contact {
+  display: flex;
+  gap: 100px;
+  align-items: flex-end;
+  height: 50%;
+  justify-content: flex-start;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+table tr > th {
+  font-size: 1.625rem;
+}
+table tr > td {
+  font-size: 1.125rem;
+}
+
+.logo-about {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.logo-about p {
+  width: 50%;
+  font-size: 1.225rem;
+}
+
+.icons {
+  font-size: 2.825rem;
+  display: flex;
+  gap: 20px;
+}
+.rights {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+}
+
+.regs {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.vert {
+  height: 100%;
+  width: 3px;
+  background-color: white;
+  border-radius: 10px;
+}

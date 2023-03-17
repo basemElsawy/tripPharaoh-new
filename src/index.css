@@ -18,7 +18,7 @@ html {
 
 :root {
   --first-section-Fsize: 95px;
-
+  --light-shadow: 0px 0px 20px 0px #212b4e33;
   --h1-font-size: 55px;
   --h2-font-size: 30px;
   --reg-text-Fsize: 25px;
@@ -102,4 +102,28 @@ h3 {
 
 .yellow {
   color: var(--text-color);
+}
+
+.underline-rev {
+  position: relative;
+  color: var(--bg-color);
+  font-weight: bold;
+}
+.underline-rev:hover {
+  color: var(--bg-color);
+}
+
+.underline-rev::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--bg-color);
+  transition: 0.3s ease;
+  border-radius: 3px;
+}
+.underline-rev:hover::before {
+  width: 100%;
 }

@@ -1,0 +1,44 @@
+/* .main-comment-menu {
+  
+} */
+.comments-header {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    color: #212b4e9c;
+    box-shadow: var(--light-shadow);
+    background-color: white;
+    align-items: center;
+  }
+  
+  .familliar-links {
+    display: flex;
+    gap: 10px;
+    color: #212b4e;
+  }
+  
+  .familliar-links .links-backward {
+    background-color: #212b4e;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-size: 1.425rem;
+    border-radius: 10px;
+  }
+  
+  .arrow-link {
+    color: #212b4e66;
+    font-size: 1.425rem;
+    transition: 0.3s ease-in-out all;
+  }
+  
+  .arrow-link div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .arrow-link div > i {
+    font-size: 1.625rem;
+  }
+  

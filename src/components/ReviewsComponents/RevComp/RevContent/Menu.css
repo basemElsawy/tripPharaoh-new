@@ -1,0 +1,34 @@
+.comments-main-header {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-around;
+  gap: 150px;
+  align-items: center;
+  margin: 70px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--light-shadow);
+}
+
+.comments-main-header {
+  padding: 50px;
+}
+
+.comments-main-header > div > h1 {
+  font-size: 3.325rem;
+  color: #212b4ec4;
+}
+
+.comments-main-header > div > p {
+  font-size: 2.825rem;
+  color: #212b4ec4;
+}
+
+.comments-body {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 90%;
+  gap: 20px;
+}
+

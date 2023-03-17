@@ -8,15 +8,39 @@
 }
 
 .form-container {
-  width: 75%;
+  width: 80%;
   margin: auto;
   transform: translateY(-170px);
   color: white;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
 }
 .form-container h1 {
   font-weight: 500;
   font-size: 3.825rem;
+}
+
+.link-to-comments {
+  width: 100%;
+  background-color: white;
+  box-shadow: var(--light-shadow);
+  font-size: 1.825rem;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 10px;
+  color: #212b4e8b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease-in-out all;
+}
+.link-to-comments .link-to {
+  color: #212b4e8b;
+  object-fit: cover;
+}
+
+.link-to-comments:hover,
+.link-to-comments:hover .link-to {
+  color: #212b4e;
 }

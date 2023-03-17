@@ -1,23 +1,18 @@
 .form-reviews {
-  display: flex;
-
-  /* align-items: center; */
-  height: 60vh;
-  /* gap: 50px; */
+  background-color: #212b4e;
 }
 
 .input-container {
   display: flex;
   flex-direction: column;
   background-color: white;
-  box-shadow: 0px 0px 20px 5px #212b4e61;
+  box-shadow: 0px 0px 10px 5px #212b4e49;
   /* padding: 20px; */
   color: #212b4eb5;
   border-radius: 10px;
   height: fit-content;
   gap: 50px;
   width: 100%;
-  grid-column: 1/6;
 }
 
 .inputs {
@@ -28,6 +23,7 @@
   justify-content: space-evenly;
   gap: 50px;
   padding: 20px;
+  width: 100%;
 }
 
 .submit-comment {
@@ -82,15 +78,6 @@
   padding: 20px;
 }
 
-.filter-container {
-  background-color: white;
-  box-shadow: 0px 0px 20px 5px #212b4e61;
-  height: 100%;
-  color: #212b4ea3;
-  /* grid-column: 5; */
-  border-radius: 10px;
-}
-
 .comments-filter {
   height: 100%;
   display: flex;
@@ -138,17 +125,6 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-}
-
-.form-container-inputs {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 20px;
-}
-
-.form-reviews {
-  width: fit-content;
 }
 
 .radio-form {

@@ -1,24 +1,36 @@
 import React, { useState } from 'react'
 import Form from './InputForm/Form'
 import './ReviewsMain.css'
-const ReviewsMain = () => {
-  const [form, setForm] = useState('');
+import Footer from './Footer/footer'
+import { NavLink } from 'react-router-dom'
+const ReviewsMain = (props) => {
+
+
 
   const saveDataHandler = (savedData) => {
-    const newCommentObj = {
+    const commentData = {
       ...savedData,
-      id: Math.random().toString()
+      id: Math.random().toFixed(2).toString()
     }
+
+    props.newCommentHandler(commentData)
   }
 
+
   return (
-    <div className='reviws-container'>
+    <div className='reviews-container'>
       <div className='main-section'>
       </div>
       <div className='form-container'>
         <h1 className='Heading'>How is the <span className='yellow'>service?</span> </h1>
-        <Form />
+        <Form onSubmitFunction={saveDataHandler} />
+
+        <div className='link-to-comments underline'>
+          <NavLink className='link-to' to='/menu'>Check user's Feedback</NavLink>
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </div>
       </div>
+      <Footer />
     </div>
   )
 }
