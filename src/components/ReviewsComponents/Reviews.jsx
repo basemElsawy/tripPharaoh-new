@@ -13,11 +13,11 @@ const Reviews = (props) => {
                 return [commentData]
             }
         )
-        props.fetchCommentData(comment)
 
+        props.grabCommentData(comment)
 
     }
-
+    console.log(comment)
 
 
     return (

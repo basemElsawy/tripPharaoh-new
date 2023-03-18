@@ -12,20 +12,24 @@ const App = () => {
     const navigate = useNavigate()
 
     const [broswerHistory, setBrowserHistory] = useState(createBrowserHistory())
-    const [comment, setComment] = useState()
-    const savedCommentFetch = (comment) => {
-        setComment(() => {
-            return [...comment]
-        })
-    }
+    const [comment, setComment] = useState(null)
 
+
+    var savedCommentFetch = (commentinformation) => {
+        setComment(
+            commentinformation
+        )
+    }
+    console.log(comment)
     // navigate(0)
     if (broswerHistory.location.pathname === '/menu') {
+
         return (
+
             <Routes>
                 <Route path='/' element={<LandingPage />} />
-                <Route path='/reviews' element={<Reviews fetchCommentData={savedCommentFetch} />} />
-                <Route path='/menu' element={<ReviewsMenu commentData={comment} />} />
+                <Route path='/reviews' element={<Reviews grabCommentData={savedCommentFetch} />} />
+                <Route path='/menu' element={<ReviewsMenu commentData={comment ? comment : ''} />} />
 
             </Routes>
         )
@@ -36,7 +40,7 @@ const App = () => {
                 <NavBar />
                 <Routes>
                     <Route path='/' element={<LandingPage />} />
-                    <Route path='/reviews' element={<Reviews fetchCommentData={savedCommentFetch} />} />
+                    <Route path='/reviews' element={<Reviews grabCommentData={savedCommentFetch} />} />
                     <Route path='/menu' element={<ReviewsMenu commentData={comment} />} />
 
                 </Routes>

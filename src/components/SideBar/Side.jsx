@@ -5,6 +5,7 @@ const Side = () => {
         activeState: null,
         objects: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }]
     })
+    
 
 
     const clickedIconHandler = (idx) => {
@@ -16,7 +17,7 @@ const Side = () => {
 
     }
 
-    console.log(barState)
+
     const addStyleHandler = (idx) => {
         if (barState.objects[idx] === barState.activeState) {
             return 'clicked'
