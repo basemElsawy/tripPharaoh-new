@@ -2,19 +2,22 @@ import React, { useState } from 'react'
 import Form from './InputForm/Form'
 import './ReviewsMain.css'
 import Footer from './Footer/footer'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 const ReviewsMain = (props) => {
 
-
+  const navigate = useNavigate()
 
   const saveDataHandler = (savedData) => {
     const commentData = {
       ...savedData,
       id: Math.random().toFixed(2).toString()
     }
+    navigate("/menu", {
+      state: { ...commentData }
+    })
 
-    props.newCommentHandler(commentData)
   }
+
 
 
   return (

@@ -4,26 +4,15 @@ import ReviewsMain from '../ReviewsComponents/RevComp/RevMain/ReviewsMain'
 import { Routes, Route } from 'react-router-dom'
 import ReviewsMenu from './RevComp/RevContent/ReviewsMenu'
 
-const Reviews = (props) => {
-    const [comment, setComment] = useState()
+const Reviews = ({ props }) => {
 
-    const commentData = (commentData) => {
-        setComment(
-            () => {
-                return [commentData]
-            }
-        )
 
-        props.grabCommentData(comment)
-
-    }
-    console.log(comment)
 
 
     return (
 
         <>
-            <ReviewsMain newCommentHandler={commentData} />
+            <ReviewsMain />
 
         </>
     )

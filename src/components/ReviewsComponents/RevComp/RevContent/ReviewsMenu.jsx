@@ -4,15 +4,32 @@ import Image from './images/comment.png'
 import HeaderCom from './CommentsHeader/HeaderCom'
 import Filter from './FormFilter.jsx/Filter'
 import Testimonials from '../testimonials/Testimonials'
+import { useLocation } from 'react-router-dom'
 const ReviewsMenu = (props) => {
-    const [comments, setComment] = useState(props.comment)
-
-    console.log(comments)
+    const location = useLocation()
+    const [comments, setComment] = useState([location.state[0]])
+    let commentState = <div className='no-comment'>No Comments Added</div>
     const [filter, setFilter] = useState('')
 
 
 
-    console.log(filter)
+
+    if (comments.length == 0) {
+        return commentState
+    }
+    else {
+
+        commentState = comments.map((val) => {
+            return (
+                <div>
+                    <Testimonials firstName={val.firstName} lastName={val.lastName} comment={val.comment} />
+                </div>
+            )
+        })
+
+    }
+
+
     return (
         <div className='main-comment-menu'>
             <HeaderCom />
@@ -27,7 +44,7 @@ const ReviewsMenu = (props) => {
             </div>
             <div className='comments-body'>
                 <div className='testimonials'>
-                    <Testimonials commentData={comments} />
+                    {commentState}
                 </div>
 
                 <div className='filter'>

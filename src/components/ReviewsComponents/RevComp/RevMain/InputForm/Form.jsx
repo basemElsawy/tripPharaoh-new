@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
 import './Form.css'
+import { useNavigate } from 'react-router-dom';
+
 const Form = (props) => {
     const [enteredFirstName, setFirstState] = useState('');
     const [enteredLastName, setLastState] = useState('');
     const [enteredEmail, setEmailState] = useState('');
     const [enteredDate, setEnteredDate] = useState('');
+    const [commentInput, setComment] = useState('')
     const [select, setSelect] = useState('Website Services')
+    const navigate = useNavigate()
 
     const firstNameHandler = (event) => {
         setFirstState(event.target.value)
@@ -25,23 +29,29 @@ const Form = (props) => {
         setSelect(event.target.value)
     }
 
+    const commentHandler = (e) => {
+        setComment(e.target.value)
+    }
     const newComment = (e) => {
         e.preventDefault()
         const commentData = [{
             firstName: enteredFirstName,
             lastName: enteredLastName,
             email: enteredEmail,
-            selectedCat: select
+            selectedCat: select,
+            comment: commentInput
             ,
             date: new Date(enteredDate)
         }]
-        props.onSubmitFunction(commentData)
+
         setFirstState('')
         setLastState('')
         setEmailState('')
         setEnteredDate('')
-    }
 
+        props.onSubmitFunction(commentData)
+
+    }
     return (
 
         <form onSubmit={newComment} className='form-reviews'>
@@ -60,7 +70,7 @@ const Form = (props) => {
                             <option value="Traveling Services">Traveling Services</option>
                         </select>
                     </div>
-                    <textarea name="comments" style={{ resize: 'none' }} placeholder='add your comment' id="comments" cols="30" rows="10"></textarea>
+                    <textarea name="comments" onChange={commentHandler} style={{ resize: 'none' }} value={commentInput} placeholder='add your comment' id="comments" cols="30" rows="10"></textarea>
                 </div>
                 <button className='btn submit-comment' type='submit'>Submit</button>
             </div>
