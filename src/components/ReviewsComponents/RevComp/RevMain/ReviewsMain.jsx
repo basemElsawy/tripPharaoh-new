@@ -3,20 +3,36 @@ import Form from './InputForm/Form'
 import './ReviewsMain.css'
 import Footer from './Footer/footer'
 import { NavLink, useNavigate } from 'react-router-dom'
+const dummyComment = [{
+  firstName: 'Basem',
+  lastName: 'elsawy',
+  email: 'besoelpop2@gmail.com'
+  , date: new Date()
+  ,
+  comment: 'this website is amazing'
+  , selectedCat: 'Website Services'
+}]
 const ReviewsMain = (props) => {
-
+  const [commentArr, setArr] = useState(dummyComment)
+  const [stored, setStored] = useState()
   const navigate = useNavigate()
-
   const saveDataHandler = (savedData) => {
-    const commentData = {
+    var commentData = {
       ...savedData,
       id: Math.random().toFixed(2).toString()
     }
-    navigate("/menu", {
-      state: { ...commentData }
+
+    setArr((prev) => {
+      return [commentData, ...prev]
     })
 
   }
+
+  navigate("/menu", {
+    state: commentArr
+  })
+
+  console.log(commentArr)
 
 
 

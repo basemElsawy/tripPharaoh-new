@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Menu.css'
 import Image from './images/comment.png'
 import HeaderCom from './CommentsHeader/HeaderCom'
@@ -7,18 +7,17 @@ import Testimonials from '../testimonials/Testimonials'
 import { useLocation } from 'react-router-dom'
 const ReviewsMenu = (props) => {
     const location = useLocation()
-    const [comments, setComment] = useState([location.state[0]])
-    let commentState = <div className='no-comment'>No Comments Added</div>
+    const [comments, setComment] = useState(location.state)
+    let commentState = <h1 className='no-comment' style={{ color: 'black' }}>No Comments Added</h1>
     const [filter, setFilter] = useState('')
 
 
 
 
-    if (comments.length == 0) {
-        return commentState
-    }
-    else {
+    console.log(location.state)
 
+
+    if (comments) {
         commentState = comments.map((val) => {
             return (
                 <div>
@@ -44,7 +43,14 @@ const ReviewsMenu = (props) => {
             </div>
             <div className='comments-body'>
                 <div className='testimonials'>
-                    {commentState}
+                    {comments.map((val) => {
+                        return (
+                            <div>
+                                <Testimonials firstName={val.firstName} lastName={val.lastName} comment={val.comment} />
+                            </div>
+                        )
+                    }
+                    }
                 </div>
 
                 <div className='filter'>

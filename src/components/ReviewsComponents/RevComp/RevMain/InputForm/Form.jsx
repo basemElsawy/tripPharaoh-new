@@ -34,7 +34,7 @@ const Form = (props) => {
     }
     const newComment = (e) => {
         e.preventDefault()
-        const commentData = [{
+        const commentData = {
             firstName: enteredFirstName,
             lastName: enteredLastName,
             email: enteredEmail,
@@ -42,7 +42,7 @@ const Form = (props) => {
             comment: commentInput
             ,
             date: new Date(enteredDate)
-        }]
+        }
 
         setFirstState('')
         setLastState('')

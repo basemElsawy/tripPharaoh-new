@@ -28,6 +28,7 @@
 .comments-body {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(auto, auto);
   width: 90%;
   gap: 20px;
   margin: 20px auto;
@@ -35,4 +36,16 @@
 
 .filter {
   grid-column: 5/7;
+}
+
+.testimonials {
+  background-color: white;
+  box-shadow: var(--light-shadow);
+  grid-column: 1/5;
+  grid-row: auto;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
