@@ -1,12 +1,13 @@
 .filter-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-
+  gap: 50px;
+  border-radius: 10px;
   background-color: white;
   padding: 20px;
   /* text-align: center; */
   box-shadow: var(--light-shadow);
+  height: 500px;
 }
 
 .filter-form div {
@@ -25,10 +26,6 @@
   font-size: 1.825rem;
   border-bottom: 3px solid #212b4e;
 }
-.filter-form div input {
-  padding: 5px;
-  font-size: 2rem;
-}
 
 .activated {
   background-color: #212b4e;
@@ -40,4 +37,14 @@
 
 .deactivated {
   background-color: white;
+}
+.filters {
+  font-weight: 600;
+}
+input[type="radio"] {
+  height: 1.5rem;
+  width: 1.5rem;
+  justify-self: flex-end;
+  margin-inline: 10px;
+  background-color: black;
 }

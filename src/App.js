@@ -4,7 +4,7 @@ import { createBrowserHistory } from '@remix-run/router'
 import { createBrowserRouter } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
 import LandingPage from './LandingPage'
-import Reviews from './components/ReviewsComponents/Reviews'
+
 import NavBar from './components/Navbar/NavBar'
 import ReviewsMenu from './components/ReviewsComponents/RevComp/RevContent/ReviewsMenu'
 import { useNavigate } from 'react-router-dom'
@@ -13,7 +13,7 @@ const App = () => {
 
     const [broswerHistory, setBrowserHistory] = useState(createBrowserHistory())
     const [commentInfo, setInfo] = useState('')
-    
+
 
 
 
@@ -24,7 +24,7 @@ const App = () => {
 
             <Routes>
                 <Route path='/' element={<LandingPage />} />
-                <Route path='/reviews' element={<Reviews />} />
+
                 <Route path='/menu' element={<ReviewsMenu reviewComment={commentInfo} />} />
 
             </Routes>
@@ -36,7 +36,7 @@ const App = () => {
                 <NavBar />
                 <Routes>
                     <Route path='/' element={<LandingPage />} />
-                    <Route path='/reviews' element={<Reviews />} />
+
                     <Route path='/menu' element={<ReviewsMenu />} />
 
                 </Routes>

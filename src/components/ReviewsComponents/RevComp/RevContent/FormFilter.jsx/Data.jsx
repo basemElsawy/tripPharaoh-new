@@ -9,34 +9,15 @@ const Data = [{
 }, {
     id: '2',
     name: 'radio',
-    value: 'Cairo',
-    forId: 'Cairo',
+    value: 'Traveling Services',
+    forId: 'Traveling-Services',
 
 }, {
     id: '3',
     name: 'radio',
-    value: 'Giza',
-    forId: 'Giza',
+    value: 'Website Services',
+    forId: 'Website-Services',
 
-},
-{
-    id: '4',
-    name: 'radio',
-    value: 'Safari trips',
-    forId: 'Safari trips',
-
-}, {
-    id: '5',
-    name: 'radio',
-    value: 'Restaurant',
-    forId: 'Restaurant',
-
-}, {
-    id: '6',
-    name: 'radio',
-    value: 'Long Journey\'s',
-    forId: 'Long Journey\'s',
-
-},]
+}]
 
 export default Data

@@ -1,36 +1,23 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Form from './InputForm/Form'
 import './ReviewsMain.css'
 import Footer from './Footer/footer'
 import { NavLink, useNavigate } from 'react-router-dom'
-const dummyComment = [{
-  firstName: 'Basem',
-  lastName: 'elsawy',
-  email: 'besoelpop2@gmail.com'
-  , date: new Date(23, 4, 2020)
-  ,
-  comment: 'this website is amazing'
-  , selectedCat: 'Website Services'
-}]
+
 const ReviewsMain = (props) => {
-  const [commentArr, setArr] = useState(dummyComment)
-  const [stored, setStored] = useState()
-  const navigate = useNavigate()
+
+
   const saveDataHandler = (savedData) => {
-    var commentData = {
+    const commentData = {
       ...savedData,
       id: Math.random().toFixed(2).toString()
     }
 
-    setArr((prev) => {
-      return [commentData, ...prev]
-    })
 
+
+    props.calledData(commentData)
   }
 
-  navigate("/menu", {
-    state: commentArr
-  })
 
 
 
@@ -38,18 +25,17 @@ const ReviewsMain = (props) => {
 
   return (
     <div className='reviews-container'>
-      <div className='main-section'>
-      </div>
+
       <div className='form-container'>
         <h1 className='Heading'>How is the <span className='yellow'>service?</span> </h1>
         <Form onSubmitFunction={saveDataHandler} />
 
-        <div className='link-to-comments underline'>
-          <NavLink className='link-to' to='/menu'>Check user's Feedback</NavLink>
-          <i class="fa-solid fa-arrow-right-long"></i>
+        <div className='link-to-comments'>
+          <NavLink className='link-to link-to-comment underline' to='/'><span>Contact us </span><i class="fa-solid fa-arrow-right-long"></i></NavLink>
+
         </div>
       </div>
-      <Footer />
+
     </div>
   )
 }

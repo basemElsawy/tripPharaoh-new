@@ -1,20 +1,14 @@
-.main-section {
-  background-image: url(./Image/reviewsImage.jpg);
-  background-color: #212b4ec1;
-  background-blend-mode: overlay;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 50vh;
+.Heading {
+  color: #212b4eb9;
 }
-
 .form-container {
-  width: 80%;
+  width: 90%;
   margin: auto;
-  transform: translateY(-170px);
+
   color: white;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
 }
 .form-container h1 {
   font-weight: 500;
@@ -27,7 +21,7 @@
   box-shadow: var(--light-shadow);
   font-size: 1.825rem;
   font-weight: 600;
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 10px;
   color: #212b4e8b;
   display: flex;
@@ -43,4 +37,19 @@
 .link-to-comments:hover,
 .link-to-comments:hover .link-to {
   color: #212b4e;
+}
+.link-to-comment {
+  width: 100%;
+  background-color: white;
+
+  font-size: 1.825rem;
+  font-weight: 600;
+
+  border-radius: 10px;
+  color: #212b4e8b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease-in-out all;
+  padding: 20px;
 }

@@ -39,7 +39,7 @@ const NavBar = () => {
               return isActive ? { ...activeState } : {}
 
             }}
-            ClassName='visited' to="/reviews">
+            ClassName='visited' to="/menu">
             Reviews
           </NavLink></li>
 
