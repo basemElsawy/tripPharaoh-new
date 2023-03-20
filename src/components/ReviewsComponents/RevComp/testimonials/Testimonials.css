@@ -1,0 +1,28 @@
+.person-name {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.test-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.comment-body {
+  margin-block: 25px;
+  width: 100%;
+  display: flex;
+
+  border-radius: 10px;
+  box-shadow: var(--light-shadow);
+  padding: 10px;
+  height: 200px;
+}
+
+.date {
+  margin-inline: 10px;
+  opacity: 0.8;
+}

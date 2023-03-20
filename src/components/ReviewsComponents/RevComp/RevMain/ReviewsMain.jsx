@@ -7,7 +7,7 @@ const dummyComment = [{
   firstName: 'Basem',
   lastName: 'elsawy',
   email: 'besoelpop2@gmail.com'
-  , date: new Date()
+  , date: new Date(23, 4, 2020)
   ,
   comment: 'this website is amazing'
   , selectedCat: 'Website Services'
@@ -32,7 +32,7 @@ const ReviewsMain = (props) => {
     state: commentArr
   })
 
-  console.log(commentArr)
+
 
 
 

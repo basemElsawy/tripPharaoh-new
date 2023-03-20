@@ -14,19 +14,10 @@ const ReviewsMenu = (props) => {
 
 
 
-    console.log(location.state)
 
 
-    if (comments) {
-        commentState = comments.map((val) => {
-            return (
-                <div>
-                    <Testimonials firstName={val.firstName} lastName={val.lastName} comment={val.comment} />
-                </div>
-            )
-        })
 
-    }
+
 
 
     return (
@@ -43,13 +34,16 @@ const ReviewsMenu = (props) => {
             </div>
             <div className='comments-body'>
                 <div className='testimonials'>
-                    {comments.map((val) => {
-                        return (
-                            <div>
-                                <Testimonials firstName={val.firstName} lastName={val.lastName} comment={val.comment} />
-                            </div>
-                        )
-                    }
+                    {
+                        comments.map((val) => {
+                            return (
+                                <div className='flex-box'>
+                                    <Testimonials className="testimonial" firstName={val.firstName} lastName={val.lastName} date={val.date} comment={val.comment} />
+                                </div>
+                            )
+
+
+                        })
                     }
                 </div>
 
@@ -57,6 +51,12 @@ const ReviewsMenu = (props) => {
                     <Filter filterObj={setFilter} />
                 </div>
 
+            </div>
+            <div className='footer-review'>
+                <h1>Egypt</h1>
+                <div>
+                    <span>Trip Pharaoh © 2022 All Right Reserved</span>
+                </div>
             </div>
         </div>
     )

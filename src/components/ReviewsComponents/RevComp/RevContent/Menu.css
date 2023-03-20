@@ -31,7 +31,7 @@
   grid-template-rows: repeat(auto, auto);
   width: 90%;
   gap: 20px;
-  margin: 20px auto;
+  margin: auto;
 }
 
 .filter {
@@ -40,12 +40,42 @@
 
 .testimonials {
   background-color: white;
-  box-shadow: var(--light-shadow);
+
   grid-column: 1/5;
-  grid-row: auto;
-  height: 250px;
+
+  height: fit-content;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   border-radius: 10px;
+  /* padding: 10px; */
+  flex-direction: column;
+}
+
+.flex-box {
+  width: 100%;
+}
+
+.footer-review {
+  height: 20vh;
+  background-image: url(./images/footerImg.jpg);
+  background-position: 100% 40%;
+  background-size: cover;
+  background-color: #212b4eb5;
+  background-blend-mode: overlay;
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.footer-review h1 {
+  color: var(--text-color);
+  font-size: 3.325rem;
+}
+.footer-review div > span {
+  font-size: 1.125rem;
 }
